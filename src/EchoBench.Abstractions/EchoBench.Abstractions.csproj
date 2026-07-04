@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>EchoBench.Abstractions</RootNamespace>
+  </PropertyGroup>
+
+</Project>

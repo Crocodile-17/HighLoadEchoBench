@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EchoBench.Orchestrator</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Только Abstractions: Host и LoadClient запускаются как внешние процессы,
+         ссылок на их сборки нет (см. STRUCTURE.md «Зависимости между проектами»). -->
+    <ProjectReference Include="..\EchoBench.Abstractions\EchoBench.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Версии NuGet-пакетов добавляются сюда по мере роста проекта. -->
+    <!-- Гистограмма латентности + коррекция coordinated omission в LoadClient. -->
+    <PackageVersion Include="HdrHistogram" Version="2.5.0" />
+    <!-- Тест-фреймворк: xUnit v3 + VSTest-мост для `dotnet test`. -->
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageVersion Include="xunit.v3" Version="2.0.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>EchoBench.Servers</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EchoBench.Abstractions\EchoBench.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

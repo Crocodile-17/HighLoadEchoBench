@@ -1,0 +1,9 @@
+# Сборка .NET
+bin/
+obj/
+
+# Генерируемые выходы стенда (пишутся в рантайме; каталоги держатся .gitkeep-ами)
+bench/results/results.csv
+bench/results/plot_*.dat
+bench/results/counters/
+bench/results/img/*.png

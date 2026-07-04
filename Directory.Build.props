@@ -1,0 +1,12 @@
+<Project>
+
+  <PropertyGroup>
+    <!-- Целевой фреймворк всех проектов решения (см. CLAUDE.md). Меняется здесь в одном месте. -->
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+</Project>

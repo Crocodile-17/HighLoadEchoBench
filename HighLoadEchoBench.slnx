@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EchoBench.Abstractions/EchoBench.Abstractions.csproj" />
+    <Project Path="src/EchoBench.Host/EchoBench.Host.csproj" />
+    <Project Path="src/EchoBench.LoadClient/EchoBench.LoadClient.csproj" />
+    <Project Path="src/EchoBench.Orchestrator/EchoBench.Orchestrator.csproj" />
+    <Project Path="src/EchoBench.Servers/EchoBench.Servers.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EchoBench.Tests/EchoBench.Tests.csproj" />
+  </Folder>
+</Solution>

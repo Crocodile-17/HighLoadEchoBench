@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- xUnit v3 — тестовый проект собирается как исполняемый. -->
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EchoBench.Tests</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="xunit.runner.visualstudio">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Tests → Abstractions, Servers (Servers тянет Abstractions транзитивно). -->
+    <ProjectReference Include="..\..\src\EchoBench.Abstractions\EchoBench.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\EchoBench.Servers\EchoBench.Servers.csproj" />
+    <!-- LoadClient — ради теста на LatencyRecorder (CO-коррекция). -->
+    <ProjectReference Include="..\..\src\EchoBench.LoadClient\EchoBench.LoadClient.csproj" />
+    <!-- Orchestrator — ради тестов ProcessRunner и CountersParser. -->
+    <ProjectReference Include="..\..\src\EchoBench.Orchestrator\EchoBench.Orchestrator.csproj" />
+  </ItemGroup>
+
+</Project>

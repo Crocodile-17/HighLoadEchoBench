@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EchoBench.LoadClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Гистограмма латентности + коррекция coordinated omission (см. LatencyRecorder). -->
+    <PackageReference Include="HdrHistogram" />
+  </ItemGroup>
+
+</Project>

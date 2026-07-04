@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EchoBench.Host</RootNamespace>
+    <!-- GC-режим тут НЕ задаётся: им управляет оркестратор через env при запуске процесса. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EchoBench.Servers\EchoBench.Servers.csproj" />
+  </ItemGroup>
+
+</Project>
